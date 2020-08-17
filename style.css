@@ -1,0 +1,199 @@
+html {
+    height: 100%;
+}
+
+body {
+    zoom: 2; /* IE */
+    -moz-transform: scale(2); /* Firefox */
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(2); /* Opera */
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(2); /* Safari And Chrome */
+    -webkit-transform-origin: 0 0;
+    transform: scale(2); /* Standard Property */
+    transform-origin: 0 0;  /* Standard Property */
+    height: 100%;
+}
+.box {
+    color: rgb(28, 30, 33);
+    direction: ltr;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 19.2px;
+    margin-bottom: 15px;
+    position: relative;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+    overflow:hidden; 
+}
+.name {
+    height: 15.4px;
+    color: rgba(0, 0, 0, 0.4);
+    direction: ltr;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.3667px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-overflow: ellipsis;
+    text-rendering: optimizelegibility;
+    white-space: nowrap;
+    -moz-osx-font-smoothing: grayscale;
+}
+.chatbox {
+    margin-left: 36px;
+    height: auto;
+    overflow:hidden; 
+}
+.chat {
+    height: 19.2px;
+    background-color: rgb(241, 240, 240);
+    box-sizing: content-box;
+    clear: left;
+    color: rgb(0, 0, 0);
+    direction: ltr;
+    float: left;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 19.2px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1px;
+    max-width: 70%;
+    outline-color: rgb(0, 0, 0);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-wrap: break-word;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    position: relative;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    user-select: text;
+    white-space: pre-wrap;
+    -moz-osx-font-smoothing: grayscale
+}
+.single {
+    border-bottom-left-radius: 19.5px;
+    border-bottom-right-radius: 19.5px;
+    border-top-left-radius: 19.5px;
+    border-top-right-radius: 19.5px;
+}
+.top {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 19.5px;
+    border-top-left-radius: 19.5px;
+    border-top-right-radius: 19.5px;
+}
+.mid {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 19.5px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 19.5px;
+}
+.down {
+    border-bottom-left-radius: 19.5px;
+    border-bottom-right-radius: 19.5px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 19.5px;    
+}
+.head {
+    bottom: 2px;
+    color: rgb(28, 30, 33);
+    cursor: pointer;
+    direction: ltr;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 28px;
+    line-height: 19.2px;
+    max-height: 28px;
+    max-width: 28px;
+    position: absolute;
+    text-rendering: optimizelegibility;
+    width: 28px;
+    -moz-osx-font-smoothing: grayscale
+}
+.head2 {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    color: rgb(28, 30, 33);
+    cursor: pointer;
+    direction: ltr;
+    display: flex;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 28px;
+    justify-content: center;
+    line-height: 19.2px;
+    max-height: 28px;
+    max-width: 28px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-rendering: optimizelegibility;
+    width: 28px;
+    -moz-osx-font-smoothing: grayscale
+}
+.cmd {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    color: rgb(28, 30, 33);
+    direction: ltr;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-top: 8px;
+    min-width: 100px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 0px;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+    height: 25px;
+    width: 600px;
+    text-align: center; 
+}
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background: transparent;
+  width: 600px;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+.img {
+    width: 32px;
+    height: 32px;
+}
