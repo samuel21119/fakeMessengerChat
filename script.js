@@ -17,19 +17,19 @@ function changeState(nxt) {
     }
 }
 function run(cmd) {
-    cmd = cmd === "QUIT" ? "QUIT" : cmd.toLowerCase();
+    var cmd2 = cmd === "QUIT" ? "QUIT" : cmd.toLowerCase();
     if (stage === "default") {
-        if (cmd === "new") {
+        if (cmd2 === "new") {
             createNewChat();
             changeState("enterName");
         }
-    }else if (stage === "enterName" && cmd !== "") {
+    }else if (stage === "enterName" && cmd2 !== "") {
         setName(cmd);
         changeState("addMsg");
     }else if (stage === "addMsg") {
-        if (cmd === "QUIT") {
+        if (cmd2 === "QUIT") {
             changeState("default");
-        }else if (cmd !== "") {
+        }else if (cmd2 !== "") {
             addChat(cmd);
         }
     }
