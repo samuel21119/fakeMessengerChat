@@ -1,22 +1,37 @@
 html {
     height: 100%;
 }
-
+:root {
+  --bg-color: rgb(255, 255, 255);
+  --name-color: rgba(0, 0, 0, 0.4);
+  --chat-background-color: rgb(241, 240, 240);
+  --chat-color: rgb(0, 0, 0);
+  --chat-outline-color: rgb(0, 0, 0);
+  --head-color: rgb(28, 30, 33);
+  --head2-color: rgb(28, 30, 33);
+  --head2-background-color: rgba(0, 0, 0, 0);
+  --cmd-color: rgb(28, 30, 33);
+  --cmd-background-color: rgba(0, 0, 0, 0.05);
+}
+.dark{
+  --bg-color: rgb(24, 25, 26);
+  --name-color: rgba(255, 255, 255, 0.5);
+  --chat-background-color: rgb(55, 55, 55);
+  --chat-color: rgb(255, 255, 255);
+  --chat-outline-color: rgb(255, 255, 255);
+  --head-color: rgb(28, 30, 33);
+  --head2-color: rgb(28, 30, 33);
+  --head2-background-color: rgba(0, 0, 0, 0);
+  --cmd-color: rgb(255, 255, 255);
+  --cmd-background-color: rgba(255, 255, 255, 0.1);
+}
 body {
-    zoom: 2; /* IE */
-    -moz-transform: scale(2); /* Firefox */
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(2); /* Opera */
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(2); /* Safari And Chrome */
-    -webkit-transform-origin: 0 0;
-    transform: scale(2); /* Standard Property */
-    transform-origin: 0 0;  /* Standard Property */
     overflow-x: hidden;
     height: 100%;
+    background-color: var(--bg-color);
+    transition: color 500ms;
 }
 .box {
-    color: rgb(28, 30, 33);
     direction: ltr;
     font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -29,7 +44,7 @@ body {
 }
 .name {
     height: 15.4px;
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--name-color);
     direction: ltr;
     font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -58,10 +73,10 @@ body {
 }
 .chat {
     height: 19.2px;
-    background-color: rgb(241, 240, 240);
+    background-color: var(--chat-background-color);
     box-sizing: content-box;
     clear: left;
-    color: rgb(0, 0, 0);
+    color: var(--chat-color);
     direction: ltr;
     float: left;
     font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
@@ -72,7 +87,7 @@ body {
     margin-right: 0px;
     margin-top: 1px;
     max-width: 70%;
-    outline-color: rgb(0, 0, 0);
+    outline-color: var(--chat-outline-color);
     outline-style: none;
     outline-width: 0px;
     overflow-wrap: break-word;
@@ -113,7 +128,7 @@ body {
 }
 .head {
     bottom: 2px;
-    color: rgb(28, 30, 33);
+    color: var(--head-color);
     cursor: pointer;
     direction: ltr;
     font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
@@ -129,12 +144,12 @@ body {
 }
 .head2 {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--head2-background-color);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    color: rgb(28, 30, 33);
+    color: var(--head2-color);
     cursor: pointer;
     direction: ltr;
     display: flex;
@@ -153,12 +168,14 @@ body {
     -moz-osx-font-smoothing: grayscale
 }
 .cmd {
-    background-color: rgba(0, 0, 0, 0.05);
+    bottom: 10px;
+    position: absolute;
+    background-color: var(--cmd-background-color);
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
-    color: rgb(28, 30, 33);
+    color: var(--cmd-color);
     direction: ltr;
     display: flex;
     flex-basis: auto;
@@ -179,16 +196,17 @@ body {
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
     height: 25px;
-    width: 50%;
+    width: 100%;
     text-align: center; 
 }
 input {
+  color: var(--cmd-color);
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
   background: transparent;
-  width: 80%;
+  width: 100%;
 }
 
 .no-outline:focus {
@@ -197,4 +215,13 @@ input {
 .img {
     width: 32px;
     height: 32px;
+}
+
+.colormode {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    z-index: 10;
 }
